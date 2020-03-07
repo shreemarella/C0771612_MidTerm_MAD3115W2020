@@ -8,9 +8,19 @@
 
 import UIKit
 
-class AddCustomerTableViewController: UITableViewController {
-
-    override func viewDidLoad() {
+class AddCustomerTableViewController: UITableViewController
+{
+    @IBOutlet weak var txtCustomerID: UITextField!
+    
+    @IBOutlet weak var txtCustomerFirstName: UITextField!
+    
+    @IBOutlet weak var txtCustomerLastName: UITextField!
+    
+    @IBOutlet weak var txtCustomerEmailID: UITextField!
+    
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
     }
@@ -27,5 +37,7 @@ class AddCustomerTableViewController: UITableViewController {
         return 0
     }
 
+    @IBAction func btnSaveRecord(_ sender: UIButton) {
+    }
     
 }

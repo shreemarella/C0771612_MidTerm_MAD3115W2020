@@ -137,12 +137,21 @@
                                 <rect key="frame" x="150" y="443" width="111" height="40"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Save "/>
+                                <connections>
+                                    <action selector="btnSaveRecord:" destination="izK-ye-6Jr" eventType="touchUpInside" id="LnP-o3-bJk"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="N21-Dd-tjJ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Customer" id="bDp-14-xhf"/>
+                    <connections>
+                        <outlet property="txtCustomerEmailID" destination="K2r-xX-BDo" id="k08-SR-Q9X"/>
+                        <outlet property="txtCustomerFirstName" destination="T92-cf-0Co" id="TRB-BT-q8s"/>
+                        <outlet property="txtCustomerID" destination="HtI-Ti-4pd" id="892-Bi-QLJ"/>
+                        <outlet property="txtCustomerLastName" destination="7Bi-Fp-RM2" id="QHb-CL-BjQ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ct8-va-3f3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
