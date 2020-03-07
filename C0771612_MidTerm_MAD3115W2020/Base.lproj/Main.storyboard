@@ -63,10 +63,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
         </scene>
-        <!--Customer List-->
+        <!--Customer List Table View Controller-->
         <scene sceneID="WDK-Q6-94D">
             <objects>
-                <tableViewController id="e0r-XY-rLL" sceneMemberID="viewController">
+                <tableViewController title="Customer List Table View Controller" id="e0r-XY-rLL" customClass="CustomerListTableViewController" customModule="C0771612_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="2wx-XP-1yO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -93,15 +93,18 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tblvcCustomerList" destination="2wx-XP-1yO" id="Uud-JA-Og8"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HfX-rM-MqS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1860.8695652173915" y="126.5625"/>
         </scene>
-        <!--Add Customer-->
+        <!--Add Customer Table View Controller-->
         <scene sceneID="QZV-KB-jjV">
             <objects>
-                <viewController id="izK-ye-6Jr" sceneMemberID="viewController">
+                <viewController title="Add Customer Table View Controller" id="izK-ye-6Jr" customClass="AddCustomerTableViewController" customModule="C0771612_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="USp-aR-rju">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

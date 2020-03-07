@@ -9,7 +9,8 @@
 import UIKit
 
 class CustomerListTableViewController: UITableViewController {
-
+    @IBOutlet var tblvcCustomerList: UITableView!
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
