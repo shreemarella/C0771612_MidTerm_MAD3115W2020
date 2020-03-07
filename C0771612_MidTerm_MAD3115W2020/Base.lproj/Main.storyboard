@@ -80,12 +80,32 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="24O-h2-mka">
-                        <barButtonItem key="rightBarButtonItem" title="Add Customer" id="JBj-ZH-xTl"/>
+                        <barButtonItem key="rightBarButtonItem" title="Add Customer" id="JBj-ZH-xTl">
+                            <connections>
+                                <segue destination="izK-ye-6Jr" kind="show" id="TWU-f6-McQ"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HfX-rM-MqS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1860.8695652173915" y="126.5625"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="QZV-KB-jjV">
+            <objects>
+                <viewController id="izK-ye-6Jr" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="USp-aR-rju">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="N21-Dd-tjJ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="bDp-14-xhf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ct8-va-3f3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2825" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fRx-KI-3tb">
