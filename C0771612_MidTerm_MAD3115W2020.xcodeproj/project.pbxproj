@@ -14,6 +14,7 @@
 		2D1BE5CD241442F9002EED99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BE5CC241442F9002EED99 /* Assets.xcassets */; };
 		2D1BE5D0241442F9002EED99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BE5CE241442F9002EED99 /* LaunchScreen.storyboard */; };
 		2D1BE5D824145400002EED99 /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BE5D724145400002EED99 /* CustomerListTableViewController.swift */; };
+		2D1BE5DA2414545E002EED99 /* AddCustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BE5D92414545E002EED99 /* AddCustomerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		2D1BE5CF241442F9002EED99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D1BE5D1241442F9002EED99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2D1BE5D724145400002EED99 /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
+		2D1BE5D92414545E002EED99 /* AddCustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 				2D1BE5CE241442F9002EED99 /* LaunchScreen.storyboard */,
 				2D1BE5D1241442F9002EED99 /* Info.plist */,
 				2D1BE5D724145400002EED99 /* CustomerListTableViewController.swift */,
+				2D1BE5D92414545E002EED99 /* AddCustomerTableViewController.swift */,
 			);
 			path = C0771612_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 				2D1BE5D824145400002EED99 /* CustomerListTableViewController.swift in Sources */,
 				2D1BE5C4241442F5002EED99 /* AppDelegate.swift in Sources */,
 				2D1BE5C6241442F5002EED99 /* SceneDelegate.swift in Sources */,
+				2D1BE5DA2414545E002EED99 /* AddCustomerTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
