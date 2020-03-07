@@ -79,7 +79,9 @@
                             <outlet property="delegate" destination="e0r-XY-rLL" id="tO6-Ks-uEk"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="24O-h2-mka"/>
+                    <navigationItem key="navigationItem" id="24O-h2-mka">
+                        <barButtonItem key="rightBarButtonItem" title="Add Customer" id="JBj-ZH-xTl"/>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HfX-rM-MqS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
