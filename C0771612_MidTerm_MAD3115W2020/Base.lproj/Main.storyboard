@@ -98,7 +98,7 @@
             </objects>
             <point key="canvasLocation" x="1860.8695652173915" y="126.5625"/>
         </scene>
-        <!--View Controller-->
+        <!--Add Customer-->
         <scene sceneID="QZV-KB-jjV">
             <objects>
                 <viewController id="izK-ye-6Jr" sceneMemberID="viewController">
@@ -139,7 +139,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="N21-Dd-tjJ"/>
                     </view>
-                    <navigationItem key="navigationItem" id="bDp-14-xhf"/>
+                    <navigationItem key="navigationItem" title="Add Customer" id="bDp-14-xhf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ct8-va-3f3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
