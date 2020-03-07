@@ -13,6 +13,7 @@
 		2D1BE5CB241442F5002EED99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BE5C9241442F5002EED99 /* Main.storyboard */; };
 		2D1BE5CD241442F9002EED99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BE5CC241442F9002EED99 /* Assets.xcassets */; };
 		2D1BE5D0241442F9002EED99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2D1BE5CE241442F9002EED99 /* LaunchScreen.storyboard */; };
+		2D1BE5D824145400002EED99 /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BE5D724145400002EED99 /* CustomerListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2D1BE5CC241442F9002EED99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2D1BE5CF241442F9002EED99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2D1BE5D1241442F9002EED99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2D1BE5D724145400002EED99 /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				2D1BE5CC241442F9002EED99 /* Assets.xcassets */,
 				2D1BE5CE241442F9002EED99 /* LaunchScreen.storyboard */,
 				2D1BE5D1241442F9002EED99 /* Info.plist */,
+				2D1BE5D724145400002EED99 /* CustomerListTableViewController.swift */,
 			);
 			path = C0771612_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2D1BE5C8241442F5002EED99 /* LoginViewController.swift in Sources */,
+				2D1BE5D824145400002EED99 /* CustomerListTableViewController.swift in Sources */,
 				2D1BE5C4241442F5002EED99 /* AppDelegate.swift in Sources */,
 				2D1BE5C6241442F5002EED99 /* SceneDelegate.swift in Sources */,
 			);

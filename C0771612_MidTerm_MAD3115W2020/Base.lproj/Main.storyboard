@@ -10,7 +10,7 @@
         <!--Sign IN -->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="C0771612_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -43,6 +43,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login "/>
                                 <connections>
+                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7dK-eB-HQP"/>
                                     <segue destination="e0r-XY-rLL" kind="show" id="N9l-yJ-hZa"/>
                                 </connections>
                             </button>
@@ -51,12 +52,18 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sign IN " id="Gj5-4w-8Hh"/>
+                    <connections>
+                        <outlet property="lblRememberMe" destination="4eY-kb-0ez" id="VSw-GY-pQJ"/>
+                        <outlet property="sthRememberMe" destination="cgM-sZ-rnl" id="QC1-VL-v4u"/>
+                        <outlet property="txtfdEmail" destination="w6I-TN-Qfi" id="lVb-Zf-7hl"/>
+                        <outlet property="txtfdPassword" destination="tUs-ga-mDg" id="8iO-wB-Ezd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="126.5625"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Customer List-->
         <scene sceneID="WDK-Q6-94D">
             <objects>
                 <tableViewController id="e0r-XY-rLL" sceneMemberID="viewController">
@@ -79,7 +86,7 @@
                             <outlet property="delegate" destination="e0r-XY-rLL" id="tO6-Ks-uEk"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="24O-h2-mka">
+                    <navigationItem key="navigationItem" title="Customer List" id="24O-h2-mka">
                         <barButtonItem key="rightBarButtonItem" title="Add Customer" id="JBj-ZH-xTl">
                             <connections>
                                 <segue destination="izK-ye-6Jr" kind="show" id="TWU-f6-McQ"/>
