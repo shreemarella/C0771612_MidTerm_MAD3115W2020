@@ -16,6 +16,7 @@
 		2D1BE5D824145400002EED99 /* CustomerListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BE5D724145400002EED99 /* CustomerListTableViewController.swift */; };
 		2D1BE5DA2414545E002EED99 /* AddCustomerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D1BE5D92414545E002EED99 /* AddCustomerTableViewController.swift */; };
 		2DAD4FA224145D5A0076B125 /* Customer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD4FA124145D5A0076B125 /* Customer.swift */; };
+		2DAD4FA4241461F50076B125 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD4FA3241461F50076B125 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		2D1BE5D724145400002EED99 /* CustomerListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomerListTableViewController.swift; sourceTree = "<group>"; };
 		2D1BE5D92414545E002EED99 /* AddCustomerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddCustomerTableViewController.swift; sourceTree = "<group>"; };
 		2DAD4FA124145D5A0076B125 /* Customer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Customer.swift; sourceTree = "<group>"; };
+		2DAD4FA3241461F50076B125 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,6 +74,7 @@
 				2D1BE5D724145400002EED99 /* CustomerListTableViewController.swift */,
 				2D1BE5D92414545E002EED99 /* AddCustomerTableViewController.swift */,
 				2DAD4FA124145D5A0076B125 /* Customer.swift */,
+				2DAD4FA3241461F50076B125 /* Extensions.swift */,
 			);
 			path = C0771612_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -153,6 +156,7 @@
 				2DAD4FA224145D5A0076B125 /* Customer.swift in Sources */,
 				2D1BE5C6241442F5002EED99 /* SceneDelegate.swift in Sources */,
 				2D1BE5DA2414545E002EED99 /* AddCustomerTableViewController.swift in Sources */,
+				2DAD4FA4241461F50076B125 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
