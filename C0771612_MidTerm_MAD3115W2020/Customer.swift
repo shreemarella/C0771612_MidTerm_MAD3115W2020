@@ -10,5 +10,23 @@ import Foundation
 
 class Customer
 {
+    var customerId : String
+    var firstName : String
+    var lastName : String
+    var fullName : String
+    {
+        return  " \(firstName) \(lastName)"
+    }
+    var emailId : String
+    var totalBillToPay : Double = 0.0
+    
+    
+    init(customerId : String, firstName : String, lastName : String, emailId : String)
+    {
+        self.customerId = customerId
+        self.firstName = firstName
+        self.lastName = lastName
+        self.emailId = emailId
+    }
     
 }
