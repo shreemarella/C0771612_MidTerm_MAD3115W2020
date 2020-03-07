@@ -42,6 +42,9 @@
                                 <rect key="frame" x="142" y="442" width="130" height="66"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login "/>
+                                <connections>
+                                    <segue destination="e0r-XY-rLL" kind="show" id="N9l-yJ-hZa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
