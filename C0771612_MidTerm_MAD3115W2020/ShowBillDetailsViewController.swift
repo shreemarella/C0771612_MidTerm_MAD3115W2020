@@ -18,7 +18,13 @@ class ShowBillDetailsViewController: UIViewController {
     override func viewDidLoad()
     {
         super.viewDidLoad()
-       
+              self.lblCustID.text = customer?.customerId
+              self.lblCustFName.text = customer?.firstName
+              self.lblCustLName.text = customer?.lastName
+              self.lblCustEmail.text = customer?.emailId
+              
+
+             
     }
     
 
