@@ -16,28 +16,35 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shree Marella" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7p-2h-fZt">
-                                <rect key="frame" x="77" y="432" width="261" height="125"/>
+                                <rect key="frame" x="77" y="378" width="261" height="125"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="icons8-user-100" translatesAutoresizingMaskIntoConstraints="NO" id="dAW-fS-ekq">
+                                <rect key="frame" x="111" y="156" width="179" height="251"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C0771612" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDS-Oi-MQC">
-                                <rect key="frame" x="139" y="541" width="136" height="36"/>
+                                <rect key="frame" x="132" y="486" width="136" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" cyan="0.57074058219178081" magenta="0.1426316352739726" yellow="0.014982876712328766" black="0.0047244510135135134" alpha="1" colorSpace="custom" customColorSpace="genericCMYKColorSpace"/>
+                        <color key="backgroundColor" red="0.68707209825515747" green="0.7132381796836853" blue="0.93045896291732788" alpha="0.9990234375" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.67834906872004674" green="0.69277008755566327" blue="0.81287389748717009" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+            <point key="canvasLocation" x="-42.028985507246382" y="184.82142857142856"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="icons8-user-100" width="33.333332061767578" height="33.333332061767578"/>
+    </resources>
 </document>

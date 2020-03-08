@@ -48,7 +48,7 @@ class AddCustomerViewController: UIViewController
         
         if txtCustomerID.text == ""
         {
-            AlertMessage(message: "Enter customer ID")
+            AlertMessage(message: "Enter Valid customer ID")
         }
         else if txtCustomerFirstName.text == ""
         {
@@ -60,7 +60,7 @@ class AddCustomerViewController: UIViewController
         }
         else if txtCustomerEmailID.text == "" || txtCustomerEmailID.text?.validEmail() == false
         {
-            AlertMessage(message: "Enter Customer Valid EmailID")
+            AlertMessage(message: "Enter Valid Customer  EmailID")
         }
         else
         {
@@ -69,7 +69,7 @@ class AddCustomerViewController: UIViewController
     }
     func AlertMessage(message: String)
     {
-        let alert = UIAlertController(title: "Wrong", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Wrong Input", message: message, preferredStyle: .alert)
         let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
         alert.addAction(okButton)
         self.present(alert, animated: true)
