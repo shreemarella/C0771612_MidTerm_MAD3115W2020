@@ -8,7 +8,7 @@
 
 import UIKit
 
-class AddCustomerTableViewController: UITableViewController
+class AddCustomerViewController: UIViewController
 {
     @IBOutlet weak var txtCustomerID: UITextField!
     
@@ -19,6 +19,8 @@ class AddCustomerTableViewController: UITableViewController
     @IBOutlet weak var txtCustomerEmailID: UITextField!
     
     
+    var newCustomer : [Customer] = []
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -27,17 +29,49 @@ class AddCustomerTableViewController: UITableViewController
 
     // MARK: - Table view data source
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
+     func numberOfSections(in tableView: UITableView) -> Int {
        
         return 0
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         
         return 0
     }
 
-    @IBAction func btnSaveRecord(_ sender: UIButton) {
+    @IBAction func btnSaveRecord(_ sender: UIButton)
+    {
+        let newCustomerId = txtCustomerID.text ?? ""
+        let newCustomerFirstName = txtCustomerFirstName.text ?? ""
+        let newCustomerLastName = txtCustomerLastName.text ?? ""
+        let newCustomerEmailId = txtCustomerEmailID.text ?? ""
+        
+        if txtCustomerID.text == ""
+        {
+            AlertMessage(message: "Enter customer ID")
+        }
+        else if txtCustomerFirstName.text == ""
+        {
+           AlertMessage(message: "Enter Customer First name ")
+        }
+        else if txtCustomerLastName.text == ""
+        {
+            AlertMessage(message: "Enter Customer Last name")
+        }
+        else if txtCustomerEmailID.text == "" || txtCustomerEmailID.text?.validEmail() == false
+        {
+            AlertMessage(message: "Enter Customer Valid EmailID")
+        }
+        else
+        {
+            DataRepoSingleton.getInstance().addCustomer(customer: Customer(customerId: newCustomerId, firstName: newCustomerFirstName, lastName: newCustomerLastName, emailId: newCustomerEmailId))
+        }
     }
-    
+    func AlertMessage(message: String)
+    {
+        let alert = UIAlertController(title: "Wrong", message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
+    }
 }

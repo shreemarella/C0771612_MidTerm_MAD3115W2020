@@ -8,26 +8,50 @@
 
 import UIKit
 
-class CustomerListTableViewController: UITableViewController {
+class CustomerListTableViewController: UIViewController {
     @IBOutlet var tblvcCustomerList: UITableView!
+    
+    var customerNames : [Customer] = []
     
     override func viewDidLoad()
     {
         super.viewDidLoad()
+        
+        customerNames = DataRepoSingleton.getInstance().getAllCustomers()
+        let userDefault = UserDefaults.standard
 
     
     }
+}
 
-    // MARK: - Table view data source
+extension CustomerListTableViewController: UITableViewDataSource, UITableViewDelegate
 
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        
-        return 0
+{
+
+    func numberOfSections(in tableView: UITableView) -> Int
+    {
+      return 1
+    }
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+      return customerNames.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
+      let cell = tableView.dequeueReusableCell(withIdentifier: "CustomerCell")
+      let customer = customerNames[indexPath.row]
+      cell?.textLabel?.text = customer.fullName
+      return cell!
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath)
+    {
+      let customer = DataRepoSingleton.getInstance().getAllCustomers()
+      let selectedCustomer = customer[indexPath.row]
+      let sb = UIStoryboard(name: "Main", bundle: nil)
+      let BillDetailsVC = sb.instantiateViewController(identifier: "BillDetailsVC") as ShowBillDetailsViewController
+      BillDetailsVC.customer = selectedCustomer
+      self.navigationController?.pushViewController(BillDetailsVC, animated: true)
     }
 
-    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        
-        return 0
-    }
 
 }

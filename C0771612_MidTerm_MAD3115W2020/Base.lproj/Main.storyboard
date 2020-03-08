@@ -43,8 +43,8 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Login "/>
                                 <connections>
-                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7dK-eB-HQP"/>
-                                    <segue destination="e0r-XY-rLL" kind="show" id="N9l-yJ-hZa"/>
+                                    <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NUi-OV-woF"/>
+                                    <segue destination="e0r-XY-rLL" kind="show" id="dFI-gz-Na7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,7 +72,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="46" id="75n-Sm-MzI">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CustomerCell" rowHeight="46" id="75n-Sm-MzI">
                                 <rect key="frame" x="0.0" y="28" width="414" height="46"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="75n-Sm-MzI" id="5HR-YI-4Ah">
@@ -82,8 +82,8 @@
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="e0r-XY-rLL" id="9Hf-MI-84N"/>
-                            <outlet property="delegate" destination="e0r-XY-rLL" id="tO6-Ks-uEk"/>
+                            <outlet property="dataSource" destination="e0r-XY-rLL" id="Hcv-gX-u6d"/>
+                            <outlet property="delegate" destination="e0r-XY-rLL" id="bga-xb-QQ0"/>
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Customer List" id="24O-h2-mka">
@@ -104,7 +104,7 @@
         <!--Add Customer Table View Controller-->
         <scene sceneID="QZV-KB-jjV">
             <objects>
-                <viewController title="Add Customer Table View Controller" id="izK-ye-6Jr" customClass="AddCustomerTableViewController" customModule="C0771612_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Add Customer Table View Controller" id="izK-ye-6Jr" customClass="AddCustomerViewController" customModule="C0771612_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="USp-aR-rju">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -156,6 +156,57 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ct8-va-3f3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2824.6376811594205" y="126.5625"/>
+        </scene>
+        <!--Show Bill Details View Controller-->
+        <scene sceneID="jq6-fM-hRd">
+            <objects>
+                <viewController storyboardIdentifier="BillDetailsVC" id="zSw-5m-qPa" customClass="ShowBillDetailsViewController" customModule="C0771612_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SSX-yk-LVN">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customer ID" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3ZF-Yt-PbW">
+                                <rect key="frame" x="20" y="132" width="109" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customer First Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6xX-v8-WEI">
+                                <rect key="frame" x="20" y="198" width="184" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customer Last Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7MT-0k-6hF">
+                                <rect key="frame" x="20" y="247" width="180" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Customer Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Y6v-ED-bxI">
+                                <rect key="frame" x="20" y="301" width="137" height="24"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="JqO-nj-PnU"/>
+                    </view>
+                    <connections>
+                        <outlet property="lblCustEmail" destination="Y6v-ED-bxI" id="50y-hT-QCW"/>
+                        <outlet property="lblCustFName" destination="6xX-v8-WEI" id="sus-uZ-NJL"/>
+                        <outlet property="lblCustID" destination="3ZF-Yt-PbW" id="M6J-ea-Cfa"/>
+                        <outlet property="lblCustLName" destination="7MT-0k-6hF" id="HxQ-gm-PXI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yJt-Dv-M72" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3719" y="127"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="fRx-KI-3tb">
