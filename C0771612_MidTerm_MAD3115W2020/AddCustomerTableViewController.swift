@@ -11,11 +11,8 @@ import UIKit
 class AddCustomerViewController: UIViewController
 {
     @IBOutlet weak var txtCustomerID: UITextField!
-    
     @IBOutlet weak var txtCustomerFirstName: UITextField!
-    
     @IBOutlet weak var txtCustomerLastName: UITextField!
-    
     @IBOutlet weak var txtCustomerEmailID: UITextField!
     
     
@@ -66,10 +63,20 @@ class AddCustomerViewController: UIViewController
         {
             DataRepoSingleton.getInstance().addCustomer(customer: Customer(customerId: newCustomerId, firstName: newCustomerFirstName, lastName: newCustomerLastName, emailId: newCustomerEmailId))
         }
+        showMessage(message: "Customer Data Added")
     }
     func AlertMessage(message: String)
     {
         let alert = UIAlertController(title: "Wrong Input", message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
+    }
+    
+    func showMessage(message: String)
+    {
+        let alert = UIAlertController(title: "Customer Added", message: message, preferredStyle: .alert)
+        
         let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
         alert.addAction(okButton)
         self.present(alert, animated: true)

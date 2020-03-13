@@ -46,7 +46,7 @@ extension BillDetailViewController : UITableViewDataSource, UITableViewDelegate
 {
     func showAlertMessage(message: String)
     {
-        let alert = UIAlertController(title: "Wrong", message: message, preferredStyle: .alert)
+        let alert = UIAlertController(title: "Wrong Input", message: message, preferredStyle: .alert)
         let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
         alert.addAction(okButton)
         self.present(alert, animated: true)
@@ -62,7 +62,53 @@ extension BillDetailViewController : UITableViewDataSource, UITableViewDelegate
         return billsD.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell
+    {
     let cell = tableView.dequeueReusableCell(withIdentifier: "BillTableViewCell") as! BillDetailsTableViewCell
+        
+        let bill = billsD[indexPath.row]
+            
+            if bill.billType == .HYDRO
+            {
+                cell.imgBillType.image = UIImage(named:"hydro-power")
+                cell.lblBillId.text = " Bill Id: \(bill.billID)"
+                cell.lblBillDate.text = " Bill Date: \(bill.billDate.getForamttedDate())"
+                cell.lblBillAmount.text = " Bill Amount: $\(bill.billAmount)"
+            }
+                
+            else if bill.billType == .INTERNET
+            {
+                cell.imgBillType.image = UIImage(named:"smarthouse")
+                cell.lblBillId.text = " Bill Id: \(bill.billID)"
+                cell.lblBillDate.text = " Bill Date: \(bill.billDate.getForamttedDate())"
+                cell.lblBillAmount.text = " Bill Amount: $\(bill.billAmount)"
+            }
+                
+            else if bill.billType == .MOBILE
+            {
+                cell.imgBillType.image = UIImage(named:"smartphone")
+                cell.lblBillId.text = " Bill Id: \(bill.billID)"
+                cell.lblBillDate.text = " Bill Date: \(bill.billDate.getForamttedDate())"
+                cell.lblBillAmount.text = " Bill Amount: $\(bill.billAmount)"
+            }
+            else
+            {
+                showAlertMessage(message: "No Bills Found")
+            }
+            return cell
+        }
+        
+        func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+           // let b = bills[indexPath.row]
+        }
+        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+            return CGFloat(150.0)
+        }
+        
+    }
+
+
+
 
        
+

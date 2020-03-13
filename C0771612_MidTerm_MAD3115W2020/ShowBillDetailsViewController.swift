@@ -12,7 +12,6 @@ class ShowBillDetailsViewController: UIViewController {
    
     @IBOutlet weak var lblCustID: UILabel!
     @IBOutlet weak var lblCustFName: UILabel!
-   
     @IBOutlet weak var lblCustLName: UILabel!
     @IBOutlet weak var lblCustEmail: UILabel!
     var customer : Customer?
@@ -27,15 +26,54 @@ class ShowBillDetailsViewController: UIViewController {
               
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func btnShowBills(_ sender: UIButton)
+    {
+        if customer?.billsD.count != 0
+            {
+            let sb = UIStoryboard(name: "Main", bundle: nil)
+            let DetailedBillVC = sb.instantiateViewController(identifier: "DetailedBillVC") as BillDetailViewController
+            DetailedBillVC.customer = self.customer
+            navigationController?.pushViewController(DetailedBillVC, animated: true)
+            }
+            else
+            {
+                showAlertMessage(message: "No Bills Foundfor this Customer")
+            }
+            
+            
+        }
+        
+        func showSelectedCustomerDetails()
+        {
+            guard let customerID = self.customer?.customerId else {
+                return
+            }
+            guard let customerFName = self.customer?.firstName else {
+                return
+            }
+            guard let customerLName = self.customer?.lastName else{
+                return
+            }
+            
+            guard let customerEmail = self.customer?.emailId else {
+                return
+            }
+            
+            lblCustID.text = "ID : \(customerID)"
+            lblCustFName.text = "FirstName : \(customerFName)"
+            lblCustLName.text = "LastName : \(customerLName)"
+            lblCustEmail.text = "Email ID : \(customerEmail)"
+            
+        }
+    func showAlertMessage(message: String)
+    {
+        let alert = UIAlertController(title: "Wrong Input", message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
+        
     }
-    */
+    
+    }
+    
 
-}

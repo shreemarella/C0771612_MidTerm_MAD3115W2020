@@ -30,9 +30,6 @@ class DataRepoSingleton
         return Array(custList.values)
         
     }
-    
-    func loadData()
-    {
         var c1=Customer(customerId: "C001", firstName: "Shree", lastName: "Marella", emailId: "Shree.Marella@gmail.com")
         var c2=Customer(customerId: "C002", firstName: "Shreya", lastName: "vaghasiya", emailId: "Shreyavaghasiya@gmail.com")
         var c3=Customer(customerId: "C003", firstName: "Kasyap", lastName: "jhaveri", emailId: "kasyap@gmail.com")
@@ -71,13 +68,7 @@ class DataRepoSingleton
                 custList.updateValue(c3, forKey: c3.customerId)
                 custList.updateValue(c4, forKey: c4.customerId)
                 custList.updateValue(c5, forKey: c5.customerId)
-                
+                }
+        
+    }
 
-            }
-
-
-            
-        }
-
-    
-}

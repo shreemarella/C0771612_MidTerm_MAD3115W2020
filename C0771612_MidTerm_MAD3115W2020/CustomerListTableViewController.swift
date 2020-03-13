@@ -19,6 +19,11 @@ class CustomerListTableViewController: UIViewController {
         
         customerNames = DataRepoSingleton.getInstance().getAllCustomers()
         let userDefault = UserDefaults.standard
+        
+    func viewWillAppear(_ animated: Bool)
+        {
+               tblvcCustomerList.reloadData()
+           }
 
     
     }
@@ -47,8 +52,17 @@ extension CustomerListTableViewController: UITableViewDataSource, UITableViewDel
     {
       let customer = DataRepoSingleton.getInstance().getAllCustomers()
       let selectedCustomer = customer[indexPath.row]
+        
       let sb = UIStoryboard(name: "Main", bundle: nil)
       let BillDetailsVC = sb.instantiateViewController(identifier: "BillDetailsVC") as ShowBillDetailsViewController
+        
+        let DetailedBillVC = sb.instantiateViewController(identifier: "DetailedBillVC") as BillDetailViewController
+        
+        BillDetailsVC.customer = selectedCustomer
+        
+        DetailedBillVC.customer = selectedCustomer
+        
+        
       BillDetailsVC.customer = selectedCustomer
       self.navigationController?.pushViewController(BillDetailsVC, animated: true)
     }

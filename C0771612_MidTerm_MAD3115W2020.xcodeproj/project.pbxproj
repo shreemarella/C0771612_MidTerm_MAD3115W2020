@@ -86,11 +86,11 @@
 			children = (
 				2D1BE5C3241442F5002EED99 /* AppDelegate.swift */,
 				2D1BE5C5241442F5002EED99 /* SceneDelegate.swift */,
-				2D1BE5C7241442F5002EED99 /* LoginViewController.swift */,
 				2D1BE5C9241442F5002EED99 /* Main.storyboard */,
 				2D1BE5CC241442F9002EED99 /* Assets.xcassets */,
 				2D1BE5CE241442F9002EED99 /* LaunchScreen.storyboard */,
 				2D1BE5D1241442F9002EED99 /* Info.plist */,
+				2D1BE5C7241442F5002EED99 /* LoginViewController.swift */,
 				2D1BE5D724145400002EED99 /* CustomerListTableViewController.swift */,
 				2D1BE5D92414545E002EED99 /* AddCustomerTableViewController.swift */,
 				2DAD4FA124145D5A0076B125 /* Customer.swift */,
