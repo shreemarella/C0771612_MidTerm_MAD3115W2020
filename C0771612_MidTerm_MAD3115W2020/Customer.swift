@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Customer
+class Customer : CaluclateBills
 {
     var customerId : String
     var firstName : String
@@ -30,7 +30,21 @@ class Customer
         self.emailId = emailId
     }
     
+    func addBill(bill : Bills, billID:String)
+    {
+        billsD.updateValue(bill, forKey: billID)
+    }
     
+    func removeBill(bill: Bills, billID:String)
+    {
+        billsD.removeValue(forKey: billID)
+        print("removed Bill of ID \(billID)")
+    }
+    
+    func getAllbills() -> [Bills]
+    {
+        var allBills
+    }
     
     
 }
