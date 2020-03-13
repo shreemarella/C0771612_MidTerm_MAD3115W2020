@@ -22,6 +22,10 @@ class Internet : Bills
         self.billAmount = caluclateTotalBill()
     }
     
-    
+    override func caluclateTotalBill() -> Double
+    {
+        self.billAmount = internetGbUsed*ratePerGb
+        return billAmount
+    }
     
 }
