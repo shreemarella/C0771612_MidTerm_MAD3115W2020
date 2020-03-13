@@ -8,4 +8,7 @@ References :-
 
 * https://www.hackingwithswift.com/example-code/uikit/how-to-use-uiactivityindicatorview-to-show-a-spinner-when-work-is-happening
 
+* https://stackoverflow.com/questions/13599275/how-to-insert-a-uiactivityindicator-into-search-bar-textfield
+
+
 
