@@ -21,6 +21,7 @@
 		2DAD4FAA241479910076B125 /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD4FA9241479910076B125 /* ShowBillDetailsViewController.swift */; };
 		2DC36EF4241B145A00F6EFC4 /* BillDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EF3241B145A00F6EFC4 /* BillDetailViewController.swift */; };
 		2DC36EF6241B2FCF00F6EFC4 /* Bills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EF5241B2FCF00F6EFC4 /* Bills.swift */; };
+		2DC36EF8241B324100F6EFC4 /* CaluclateBills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EF7241B324100F6EFC4 /* CaluclateBills.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,6 +41,7 @@
 		2DAD4FA9241479910076B125 /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
 		2DC36EF3241B145A00F6EFC4 /* BillDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailViewController.swift; sourceTree = "<group>"; };
 		2DC36EF5241B2FCF00F6EFC4 /* Bills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bills.swift; sourceTree = "<group>"; };
+		2DC36EF7241B324100F6EFC4 /* CaluclateBills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaluclateBills.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 				2DAD4FA9241479910076B125 /* ShowBillDetailsViewController.swift */,
 				2DC36EF3241B145A00F6EFC4 /* BillDetailViewController.swift */,
 				2DC36EF5241B2FCF00F6EFC4 /* Bills.swift */,
+				2DC36EF7241B324100F6EFC4 /* CaluclateBills.swift */,
 			);
 			path = C0771612_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -173,6 +176,7 @@
 				2DAD4FA8241476AC0076B125 /* DataRepoSingleton.swift in Sources */,
 				2D1BE5DA2414545E002EED99 /* AddCustomerTableViewController.swift in Sources */,
 				2DAD4FA4241461F50076B125 /* Extensions.swift in Sources */,
+				2DC36EF8241B324100F6EFC4 /* CaluclateBills.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
