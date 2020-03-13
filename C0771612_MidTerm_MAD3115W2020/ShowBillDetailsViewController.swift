@@ -45,17 +45,25 @@ class ShowBillDetailsViewController: UIViewController {
         
         func showSelectedCustomerDetails()
         {
-            guard let customerID = self.customer?.customerId else {
+            guard let customerID = self.customer?.customerId
+                else
+            {
                 return
             }
-            guard let customerFName = self.customer?.firstName else {
+            guard let customerFName = self.customer?.firstName
+                else
+            {
                 return
             }
-            guard let customerLName = self.customer?.lastName else{
+            guard let customerLName = self.customer?.lastName
+                else
+            {
                 return
             }
             
-            guard let customerEmail = self.customer?.emailId else {
+            guard let customerEmail = self.customer?.emailId
+                else
+            {
                 return
             }
             
