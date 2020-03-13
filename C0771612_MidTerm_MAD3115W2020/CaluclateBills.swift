@@ -1,5 +1,5 @@
 //
-//  CaluclateBill.swift
+//  CaluclateBills.swift
 //  C0771612_MidTerm_MAD3115W2020
 //
 //  Created by Shree Marella on 2020-03-12.
@@ -11,5 +11,5 @@ import Foundation
 
 protocol CaluclateBills
 {
-    func calculateTotalBill() -> Double
+    func caluclateTotalBill() -> Double
 }

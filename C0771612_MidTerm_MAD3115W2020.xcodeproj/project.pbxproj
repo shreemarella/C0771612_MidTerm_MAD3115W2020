@@ -21,7 +21,8 @@
 		2DAD4FAA241479910076B125 /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD4FA9241479910076B125 /* ShowBillDetailsViewController.swift */; };
 		2DC36EF4241B145A00F6EFC4 /* BillDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EF3241B145A00F6EFC4 /* BillDetailViewController.swift */; };
 		2DC36EF6241B2FCF00F6EFC4 /* Bills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EF5241B2FCF00F6EFC4 /* Bills.swift */; };
-		2DC36EF8241B324100F6EFC4 /* CaluclateBills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EF7241B324100F6EFC4 /* CaluclateBills.swift */; };
+		2DC36EFA241B33FF00F6EFC4 /* CaluclateBills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EF9241B33FF00F6EFC4 /* CaluclateBills.swift */; };
+		2DC36EFC241B34DD00F6EFC4 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EFB241B34DD00F6EFC4 /* Mobile.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +42,8 @@
 		2DAD4FA9241479910076B125 /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
 		2DC36EF3241B145A00F6EFC4 /* BillDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailViewController.swift; sourceTree = "<group>"; };
 		2DC36EF5241B2FCF00F6EFC4 /* Bills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bills.swift; sourceTree = "<group>"; };
-		2DC36EF7241B324100F6EFC4 /* CaluclateBills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaluclateBills.swift; sourceTree = "<group>"; };
+		2DC36EF9241B33FF00F6EFC4 /* CaluclateBills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaluclateBills.swift; sourceTree = "<group>"; };
+		2DC36EFB241B34DD00F6EFC4 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,7 +91,8 @@
 				2DAD4FA9241479910076B125 /* ShowBillDetailsViewController.swift */,
 				2DC36EF3241B145A00F6EFC4 /* BillDetailViewController.swift */,
 				2DC36EF5241B2FCF00F6EFC4 /* Bills.swift */,
-				2DC36EF7241B324100F6EFC4 /* CaluclateBills.swift */,
+				2DC36EF9241B33FF00F6EFC4 /* CaluclateBills.swift */,
+				2DC36EFB241B34DD00F6EFC4 /* Mobile.swift */,
 			);
 			path = C0771612_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -172,11 +175,12 @@
 				2D1BE5C4241442F5002EED99 /* AppDelegate.swift in Sources */,
 				2DAD4FA224145D5A0076B125 /* Customer.swift in Sources */,
 				2D1BE5C6241442F5002EED99 /* SceneDelegate.swift in Sources */,
+				2DC36EFA241B33FF00F6EFC4 /* CaluclateBills.swift in Sources */,
 				2DC36EF4241B145A00F6EFC4 /* BillDetailViewController.swift in Sources */,
 				2DAD4FA8241476AC0076B125 /* DataRepoSingleton.swift in Sources */,
 				2D1BE5DA2414545E002EED99 /* AddCustomerTableViewController.swift in Sources */,
+				2DC36EFC241B34DD00F6EFC4 /* Mobile.swift in Sources */,
 				2DAD4FA4241461F50076B125 /* Extensions.swift in Sources */,
-				2DC36EF8241B324100F6EFC4 /* CaluclateBills.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

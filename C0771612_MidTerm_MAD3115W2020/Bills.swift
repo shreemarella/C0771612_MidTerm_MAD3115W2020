@@ -13,7 +13,7 @@ enum BillType
     case HYDRO,INTERNET,MOBILE
 }
 
-class Bills
+class Bills : CaluclateBills
 {
     
     var billID : String
