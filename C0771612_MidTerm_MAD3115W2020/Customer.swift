@@ -10,6 +10,7 @@ import Foundation
 
 class Customer : CaluclateBills
 {
+    
     var customerId : String
     var firstName : String
     var lastName : String
@@ -43,7 +44,22 @@ class Customer : CaluclateBills
     
     func getAllbills() -> [Bills]
     {
-        var allBills
+        var allBills = [Bills] ()
+        for bill in billsD
+        {
+            allBills.append(bill.value)
+        }
+        return allBills
+    }
+    
+     func calculateTotalBill() -> Double
+    {
+        var dummyTotalBillToPay = 0.0
+        for i in billsD
+        {
+            dummyTotalBillToPay += i.value.billAmount
+        }
+        return dummyTotalBillToPay
     }
     
     
