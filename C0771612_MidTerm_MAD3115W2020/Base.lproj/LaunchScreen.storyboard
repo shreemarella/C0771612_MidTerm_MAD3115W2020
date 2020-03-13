@@ -16,25 +16,36 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Shree Marella" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O7p-2h-fZt">
-                                <rect key="frame" x="77" y="378" width="261" height="125"/>
+                                <rect key="frame" x="70" y="271" width="261" height="62"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="34"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="icons8-user-100" translatesAutoresizingMaskIntoConstraints="NO" id="dAW-fS-ekq">
-                                <rect key="frame" x="111" y="156" width="179" height="251"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="C0771612" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tDS-Oi-MQC">
-                                <rect key="frame" x="132" y="486" width="136" height="36"/>
+                                <rect key="frame" x="132" y="328" width="136" height="36"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="UTILITY BILLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33a-a1-vkU">
+                                <rect key="frame" x="70" y="424" width="262" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="42"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="businessman" translatesAutoresizingMaskIntoConstraints="NO" id="iwo-q4-Nid">
+                                <rect key="frame" x="92" y="44" width="240" height="219"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="500_F_228456474_JBklbYE56xkYPYD8zpNYoesl9QpMy7p8" translatesAutoresizingMaskIntoConstraints="NO" id="wwB-C3-MZf">
+                                <rect key="frame" x="0.0" y="514" width="414" height="382"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.68707209825515747" green="0.7132381796836853" blue="0.93045896291732788" alpha="0.9990234375" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.50233680009841919" green="0.87093788385391235" blue="0.91097790002822876" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <color key="tintColor" red="0.67834906872004674" green="0.69277008755566327" blue="0.81287389748717009" alpha="1" colorSpace="calibratedRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -45,6 +56,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-user-100" width="33.333332061767578" height="33.333332061767578"/>
+        <image name="500_F_228456474_JBklbYE56xkYPYD8zpNYoesl9QpMy7p8" width="500" height="500"/>
+        <image name="businessman" width="512" height="512"/>
     </resources>
 </document>

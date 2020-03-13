@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Sign IN -->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="LoginViewController" customModule="C0771612_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,42 +16,56 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Remember Me ?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4eY-kb-0ez">
-                                <rect key="frame" x="89" y="317" width="125" height="47"/>
+                                <rect key="frame" x="89" y="434" width="125" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="w6I-TN-Qfi">
-                                <rect key="frame" x="89" y="145" width="236" height="34"/>
+                                <rect key="frame" x="89" y="299" width="236" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tUs-ga-mDg">
-                                <rect key="frame" x="89" y="248" width="236" height="34"/>
+                                <rect key="frame" x="89" y="367" width="236" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgM-sZ-rnl">
-                                <rect key="frame" x="238" y="325" width="49" height="31"/>
+                                <rect key="frame" x="242" y="442" width="49" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </switch>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LHd-MC-7TI">
-                                <rect key="frame" x="61" y="355" width="292" height="216"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="500_F_228456474_JBklbYE56xkYPYD8zpNYoesl9QpMy7p8" translatesAutoresizingMaskIntoConstraints="NO" id="tJp-CZ-MnV">
+                                <rect key="frame" x="87" y="101" width="240" height="164"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Login" image="icons8-login-64"/>
+                                <color key="backgroundColor" red="0.68456369638442993" green="0.66936230659484863" blue="0.92720687389373779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LHd-MC-7TI">
+                                <rect key="frame" x="130" y="507" width="130" height="117"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="login">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Login">
+                                            <attributes>
+                                                <font key="NSFont" metaFont="system" size="18"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
                                 <connections>
                                     <action selector="btnLogin:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NUi-OV-woF"/>
                                     <segue destination="e0r-XY-rLL" kind="show" id="dFI-gz-Na7"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.70846027135848999" green="0.83635902404785156" blue="0.93052029609680176" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.68456369638442993" green="0.66936230659484863" blue="0.92720687389373779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Sign IN " id="Gj5-4w-8Hh"/>
+                    <navigationItem key="navigationItem" title="Login" id="Gj5-4w-8Hh"/>
                     <connections>
                         <outlet property="lblRememberMe" destination="4eY-kb-0ez" id="VSw-GY-pQJ"/>
                         <outlet property="sthRememberMe" destination="cgM-sZ-rnl" id="QC1-VL-v4u"/>
@@ -78,6 +92,7 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="75n-Sm-MzI" id="5HR-YI-4Ah">
                                     <rect key="frame" x="0.0" y="0.0" width="414" height="46"/>
                                     <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" red="0.68456369638442993" green="0.66936230659484863" blue="0.92720687389373779" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </tableViewCellContentView>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableViewCell>
@@ -143,7 +158,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.7012210488319397" green="0.82369893789291382" blue="0.93022686243057251" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.63854050636291504" green="0.62281614542007446" blue="0.91967391967773438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="N21-Dd-tjJ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Add Customer" id="bDp-14-xhf"/>
@@ -231,7 +246,7 @@
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.68546223640441895" green="0.81491142511367798" blue="0.92910796403884888" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.63854050636291504" green="0.62281614542007446" blue="0.91967391967773438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="JqO-nj-PnU"/>
                     </view>
                     <connections>
@@ -290,7 +305,7 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
-                                            <color key="backgroundColor" red="0.69991356134414673" green="0.80965059995651245" blue="0.93098795413970947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="backgroundColor" red="0.63854050636291504" green="0.62281614542007446" blue="0.91967391967773438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="imgBillType" destination="M3Y-16-Gls" id="yB3-EC-48G"/>
@@ -312,7 +327,7 @@
                                 <color key="textColor" systemColor="systemBlueColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" red="0.69146567583084106" green="0.80648165941238403" blue="0.93170106410980225" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.63854050636291504" green="0.62281614542007446" blue="0.91967391967773438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="TKA-Uk-bjW" firstAttribute="bottom" secondItem="vdq-Ta-Viu" secondAttribute="bottom" id="T7q-Mb-39M"/>
                             <constraint firstItem="vdq-Ta-Viu" firstAttribute="top" secondItem="TKA-Uk-bjW" secondAttribute="top" id="seL-87-BXm"/>
@@ -337,7 +352,7 @@
                     <view key="view" contentMode="scaleToFill" id="2Hm-Dy-6E5">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="0.69991356134414673" green="0.80965059995651245" blue="0.93098795413970947" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.63854050636291504" green="0.62281614542007446" blue="0.91967391967773438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="OTG-Jh-RIv"/>
                     </view>
                 </viewController>
@@ -365,6 +380,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="icons8-login-64" width="64" height="64"/>
+        <image name="500_F_228456474_JBklbYE56xkYPYD8zpNYoesl9QpMy7p8" width="500" height="500"/>
+        <image name="login" width="512" height="512"/>
     </resources>
 </document>
