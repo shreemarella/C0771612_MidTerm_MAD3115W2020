@@ -10,6 +10,15 @@ import Foundation
 
 class Customer : CaluclateBills
 {
+    func caluclateTotalBill() -> Double {
+        var dummyTotalBillToPay = 0.0
+        for i in billsD
+        {
+            dummyTotalBillToPay += i.value.billAmount
+        }
+        return dummyTotalBillToPay
+    }
+    
     
     var customerId : String
     var firstName : String
@@ -52,15 +61,6 @@ class Customer : CaluclateBills
         return allBills
     }
     
-     func calculateTotalBill() -> Double
-    {
-        var dummyTotalBillToPay = 0.0
-        for i in billsD
-        {
-            dummyTotalBillToPay += i.value.billAmount
-        }
-        return dummyTotalBillToPay
-    }
     
     
 }
