@@ -10,7 +10,11 @@ import UIKit
 
 class BillDetailViewController: UIViewController {
 
-    override func viewDidLoad() {
+    @IBOutlet weak var tblBillDetailView: UITableView!
+    @IBOutlet weak var lblTotalBill: UILabel!
+    
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.

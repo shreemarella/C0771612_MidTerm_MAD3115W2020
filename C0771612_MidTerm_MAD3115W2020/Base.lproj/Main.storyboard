@@ -297,6 +297,10 @@
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="H3R-D7-It4" id="6sX-R1-LT5"/>
+                                    <outlet property="delegate" destination="H3R-D7-It4" id="4W6-Gs-R6q"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" red="0.69146567583084106" green="0.80648165941238403" blue="0.93170106410980225" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -308,6 +312,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TKA-Uk-bjW"/>
                     </view>
+                    <connections>
+                        <outlet property="lblTotalBill" destination="3l9-Yc-wDI" id="2KJ-Qz-Bw3"/>
+                        <outlet property="tblBillDetailView" destination="vdq-Ta-Viu" id="M1S-rg-pTF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flb-wH-COS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

@@ -19,6 +19,7 @@ class Customer
     }
     var emailId : String
     var totalBillToPay : Double = 0.0
+    lazy var billsD = [String : Bills]()
     
     
     init(customerId : String, firstName : String, lastName : String, emailId : String)
@@ -28,5 +29,8 @@ class Customer
         self.lastName = lastName
         self.emailId = emailId
     }
+    
+    
+    
     
 }
