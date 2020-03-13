@@ -362,6 +362,9 @@
                                     <segment title="MOBILE"/>
                                     <segment title="INTERNET"/>
                                 </segments>
+                                <connections>
+                                    <action selector="segmentBillType:" destination="1O8-Ox-Zk6" eventType="valueChanged" id="GTA-sm-RJk"/>
+                                </connections>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="BillID" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="h7g-rs-ZAr">
                                 <rect key="frame" x="20" y="187" width="374" height="34"/>
@@ -388,7 +391,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Internet Gb Used" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fyb-qk-97a">
-                                <rect key="frame" x="20" y="355" width="374" height="34"/>
+                                <rect key="frame" x="20" y="481" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -406,18 +409,27 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Agency Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="scA-f3-vN2">
-                                <rect key="frame" x="20" y="481" width="374" height="34"/>
+                                <rect key="frame" x="20" y="523" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDF-kH-b3v">
-                                <rect key="frame" x="145" y="600" width="105" height="30"/>
+                                <rect key="frame" x="145" y="614" width="105" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Add Bill Record"/>
+                                <connections>
+                                    <action selector="btnAddBillRecord:" destination="1O8-Ox-Zk6" eventType="touchUpInside" id="gW6-Mp-qDk"/>
+                                </connections>
                             </button>
                             <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Units Consumed" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="93P-1B-Obz">
-                                <rect key="frame" x="20" y="523" width="374" height="34"/>
+                                <rect key="frame" x="20" y="565" width="374" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Mobile Net Gb Used" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O3a-zT-cID">
+                                <rect key="frame" x="20" y="355" width="374" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -430,6 +442,18 @@
                         <color key="backgroundColor" red="0.63854050636291504" green="0.62281614542007446" blue="0.91967391967773438" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="OTG-Jh-RIv"/>
                     </view>
+                    <connections>
+                        <outlet property="txtfAgencyName" destination="scA-f3-vN2" id="rXK-fK-hQh"/>
+                        <outlet property="txtfBillDate" destination="nb6-77-HES" id="VH9-X5-yR1"/>
+                        <outlet property="txtfBillId" destination="h7g-rs-ZAr" id="Z8h-kn-rdr"/>
+                        <outlet property="txtfIntGbUsedInternet" destination="fyb-qk-97a" id="xhK-e5-AUw"/>
+                        <outlet property="txtfMinUsed" destination="kGJ-PW-SUl" id="XUC-e6-V3a"/>
+                        <outlet property="txtfMobileManuName" destination="nGG-5r-5Yo" id="Wtj-DE-KwZ"/>
+                        <outlet property="txtfMobilenetGbUsed" destination="O3a-zT-cID" id="eku-KR-J6I"/>
+                        <outlet property="txtfPlanName" destination="Tu0-Id-xNe" id="5YN-g8-ep3"/>
+                        <outlet property="txtfProviderName" destination="ReC-58-Jmf" id="cXW-KT-DTw"/>
+                        <outlet property="txtfUnitsConsumed" destination="93P-1B-Obz" id="Jfz-0K-4g3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k0b-Eu-jCs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
