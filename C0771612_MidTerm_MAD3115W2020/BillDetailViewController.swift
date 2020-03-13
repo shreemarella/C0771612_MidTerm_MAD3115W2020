@@ -13,22 +13,56 @@ class BillDetailViewController: UIViewController {
     @IBOutlet weak var tblBillDetailView: UITableView!
     @IBOutlet weak var lblTotalBill: UILabel!
     
+    
+    var customer : Customer?
+    var billsD = [Bills]()
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.billsD = customer!.getAllbills()
+        self.navigationItem.title = "Customer Detailed Bills"
+        self.addNewBillButton()
+        self.lblTotalBill.text = String(format: "Total Bill $%.2f", customer?.caluclateTotalBill() ?? "" )
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func addNewBillButton()
+    {
+        let newBillButton = UIBarButtonItem(title: "Add New Bill", style: .plain, target: self, action: #selector(self.addNewBill))
+        self.navigationItem.rightBarButtonItem = newBillButton
     }
-    */
+    
+    @objc func addNewBill()
+       {
+           let sb = UIStoryboard(name: "Main", bundle: nil)
+           let addBillVC = sb.instantiateViewController(identifier: "AddBillVC") as! AddBillViewController
+           addBillVC.customer = self.customer
+           navigationController?.pushViewController(addBillVC, animated: true)
+       }
 
 }
+
+extension BillDetailViewController : UITableViewDataSource, UITableViewDelegate
+{
+    func showAlertMessage(message: String)
+    {
+        let alert = UIAlertController(title: "Wrong", message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        alert.addAction(okButton)
+        self.present(alert, animated: true)
+    }
+    
+    func numberOfSections(in tableView: UITableView) -> Int
+    {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int
+    {
+        return billsD.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "BillTableViewCell") as! BillDetailsTableViewCell
+
+       

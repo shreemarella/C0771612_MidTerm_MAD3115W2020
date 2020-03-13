@@ -25,6 +25,8 @@
 		2DC36EFC241B34DD00F6EFC4 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EFB241B34DD00F6EFC4 /* Mobile.swift */; };
 		2DC36EFE241B381E00F6EFC4 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EFD241B381E00F6EFC4 /* Internet.swift */; };
 		2DC36F00241B426500F6EFC4 /* Hydro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EFF241B426500F6EFC4 /* Hydro.swift */; };
+		2DC36F02241B510900F6EFC4 /* AddBillViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36F01241B510900F6EFC4 /* AddBillViewController.swift */; };
+		2DC36F04241B51CE00F6EFC4 /* BillDetailsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36F03241B51CE00F6EFC4 /* BillDetailsTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +50,8 @@
 		2DC36EFB241B34DD00F6EFC4 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
 		2DC36EFD241B381E00F6EFC4 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 		2DC36EFF241B426500F6EFC4 /* Hydro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Hydro.swift; sourceTree = "<group>"; };
+		2DC36F01241B510900F6EFC4 /* AddBillViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddBillViewController.swift; sourceTree = "<group>"; };
+		2DC36F03241B51CE00F6EFC4 /* BillDetailsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailsTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,8 @@
 				2DC36EFB241B34DD00F6EFC4 /* Mobile.swift */,
 				2DC36EFD241B381E00F6EFC4 /* Internet.swift */,
 				2DC36EFF241B426500F6EFC4 /* Hydro.swift */,
+				2DC36F01241B510900F6EFC4 /* AddBillViewController.swift */,
+				2DC36F03241B51CE00F6EFC4 /* BillDetailsTableViewCell.swift */,
 			);
 			path = C0771612_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -175,6 +181,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2DAD4FAA241479910076B125 /* ShowBillDetailsViewController.swift in Sources */,
+				2DC36F02241B510900F6EFC4 /* AddBillViewController.swift in Sources */,
+				2DC36F04241B51CE00F6EFC4 /* BillDetailsTableViewCell.swift in Sources */,
 				2D1BE5C8241442F5002EED99 /* LoginViewController.swift in Sources */,
 				2D1BE5D824145400002EED99 /* CustomerListTableViewController.swift in Sources */,
 				2DC36EF6241B2FCF00F6EFC4 /* Bills.swift in Sources */,
