@@ -9,8 +9,10 @@
 import UIKit
 
 class ShowBillDetailsViewController: UIViewController {
+   
     @IBOutlet weak var lblCustID: UILabel!
     @IBOutlet weak var lblCustFName: UILabel!
+   
     @IBOutlet weak var lblCustLName: UILabel!
     @IBOutlet weak var lblCustEmail: UILabel!
     var customer : Customer?
