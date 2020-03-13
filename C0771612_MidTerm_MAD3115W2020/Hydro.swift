@@ -21,6 +21,9 @@ class Hydro : Bills
         super.init(billID: billID, billDate: billDate, billType: billType)
         self.billAmount = caluclateTotalBill()
     }
-    
+    override func caluclateTotalBill() -> Double {
+        self.billAmount = unitsConsumed*ratePerUnit
+        return billAmount
+    }
     
 }
