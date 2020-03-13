@@ -16,6 +16,7 @@ class AddBillViewController: UIViewController
     {
         super.viewDidLoad()
         self.navigationItem.title = "Add New Bill"
+        self.title = "Add New Bill Record"
     }
 
 }
