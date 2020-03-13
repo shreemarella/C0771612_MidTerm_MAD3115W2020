@@ -17,11 +17,11 @@ class Bills : CaluclateBills
 {
     
     var billID : String
-    var billDate : Data
+    var billDate : Date
     var billType : BillType
     var billAmount : Double = 0.0
     
-    init(billID: String, billDate: Data, billType: BillType)
+    init(billID: String, billDate: Date, billType: BillType)
     {
         self.billID = billID
         self.billDate = billDate

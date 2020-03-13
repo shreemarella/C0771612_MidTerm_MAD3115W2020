@@ -23,6 +23,7 @@
 		2DC36EF6241B2FCF00F6EFC4 /* Bills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EF5241B2FCF00F6EFC4 /* Bills.swift */; };
 		2DC36EFA241B33FF00F6EFC4 /* CaluclateBills.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EF9241B33FF00F6EFC4 /* CaluclateBills.swift */; };
 		2DC36EFC241B34DD00F6EFC4 /* Mobile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EFB241B34DD00F6EFC4 /* Mobile.swift */; };
+		2DC36EFE241B381E00F6EFC4 /* Internet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EFD241B381E00F6EFC4 /* Internet.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -44,6 +45,7 @@
 		2DC36EF5241B2FCF00F6EFC4 /* Bills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bills.swift; sourceTree = "<group>"; };
 		2DC36EF9241B33FF00F6EFC4 /* CaluclateBills.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaluclateBills.swift; sourceTree = "<group>"; };
 		2DC36EFB241B34DD00F6EFC4 /* Mobile.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mobile.swift; sourceTree = "<group>"; };
+		2DC36EFD241B381E00F6EFC4 /* Internet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Internet.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -93,6 +95,7 @@
 				2DC36EF5241B2FCF00F6EFC4 /* Bills.swift */,
 				2DC36EF9241B33FF00F6EFC4 /* CaluclateBills.swift */,
 				2DC36EFB241B34DD00F6EFC4 /* Mobile.swift */,
+				2DC36EFD241B381E00F6EFC4 /* Internet.swift */,
 			);
 			path = C0771612_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -178,6 +181,7 @@
 				2DC36EFA241B33FF00F6EFC4 /* CaluclateBills.swift in Sources */,
 				2DC36EF4241B145A00F6EFC4 /* BillDetailViewController.swift in Sources */,
 				2DAD4FA8241476AC0076B125 /* DataRepoSingleton.swift in Sources */,
+				2DC36EFE241B381E00F6EFC4 /* Internet.swift in Sources */,
 				2D1BE5DA2414545E002EED99 /* AddCustomerTableViewController.swift in Sources */,
 				2DC36EFC241B34DD00F6EFC4 /* Mobile.swift in Sources */,
 				2DAD4FA4241461F50076B125 /* Extensions.swift in Sources */,

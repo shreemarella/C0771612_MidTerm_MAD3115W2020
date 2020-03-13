@@ -18,7 +18,7 @@ class Mobile : Bills
        var ratePerGb              : Double = 5.0
        var ratePerMinute          : Double = 0.5
     
-    init(billID: String, billDate: Date, billType: BillType, mobileManufacturerName: String, planName: String, mobileNumber: String, internetGbUsed: Double, minutesUsed: Double)
+    init( billID: String, billDate: Date, billType: BillType,  mobileManufacturerName: String,  planName: String,mobileNumber: String, internetGbUsed: Double, minutesUsed: Double)
     {
         self.mobileManufacturerName=mobileManufacturerName
         self.planName=planName
@@ -27,5 +27,13 @@ class Mobile : Bills
         self.minutesUsed=minutesUsed
         super.init(billID: billID, billDate: billDate, billType: billType)
         self.billAmount = caluclateTotalBill()
+    }
+    
+    override func caluclateTotalBill() -> Double
+    {
+        self.billAmount = internetGbUsed*ratePerGb + Double(minutesUsed)*ratePerMinute
+            
+            return billAmount
+    
     }
 }
