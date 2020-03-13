@@ -41,8 +41,10 @@ class DataRepoSingleton
         
         var m1 = Mobile(billID: "MOB001", billDate: Date.from(year: 2019, month: 10, day: 24) ?? Date(), billType: BillType.MOBILE, mobileManufacturerName: "Galaxy Samsung", planName: "Prepaid Talk + Text plan", mobileNumber: "+1(567)-305-8907", internetGbUsed: 9.0, minutesUsed: 498)
         var m2 = Mobile(billID: "MOB002", billDate: Date.from(year: 2019, month: 06, day: 06) ?? Date(), billType: BillType.MOBILE, mobileManufacturerName: "Apple", planName: "Prepaid + Text plan", mobileNumber: "8199210696", internetGbUsed: 7.5, minutesUsed: 420)
-
         
-    }
+        var i1 = Internet(billID: "INT001", billDate: Date.from(year: 2019, month: 09, day: 15) ?? Date(), billType: BillType.INTERNET, providerName: "FREEDOM", internetGbUsed: 450.0)
+        var i2 = Internet(billID: "INT002", billDate: Date.from(year: 2018, month: 10, day: 19) ?? Date(), billType: BillType.INTERNET, providerName: "ROGER", internetGbUsed: 420)
+        var i3 = Internet(billID: "INT003", billDate: Date.from(year: 2019, month: 11, day: 25) ?? Date(), billType: BillType.INTERNET, providerName: "Bell", internetGbUsed: 290)
+
     
 }
