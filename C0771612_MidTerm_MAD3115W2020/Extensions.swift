@@ -8,50 +8,60 @@
 
 import Foundation
 
+import  UIKit
 
 extension String
 {
-    func validEmail() -> Bool
+
+    func emailValid() -> Bool
     {
+        //https://stackoverflow.com/questions/27998409/email-phone-validation-in-swift
         let emailRegEx = "[A-Z0-9a-z.%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,64}"
         let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegEx)
         return emailTest.evaluate(with: self)
     }
     
-    func validMobile() -> Bool
+    func mobileValid() -> Bool
     {
+        //https://stackoverflow.com/questions/27998409/email-phone-validation-in-swift
         let mobileNumberRegEx = "[0-9]{10}"
         let mobileTest = NSPredicate(format: "SELF MATCHES %@", mobileNumberRegEx)
         return mobileTest.evaluate(with: self)
     }
-}
     
-    extension Date
+    
+    func toDate(withFormat format: String = "MMM dd, yyyy") -> Date
     {
-        public func getForamttedDate() -> String
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = format
+        guard let date = dateFormatter.date(from: self) else
         {
-            let dateFormatterPrint = DateFormatter()
-            dateFormatterPrint.dateFormat = "EEEE, dd MMMM, yyyy"
-            let formattedDate = dateFormatterPrint.string(from: self)
-            return formattedDate
+            preconditionFailure("Inserted Date Format Is Incorrect")
         }
-        
-        static func from(year: Int, month: Int, day: Int) -> Date?
-        {
-            let calendar = Calendar(identifier: .gregorian)
-            var dateComponents = DateComponents()
-            dateComponents.year = year
-            dateComponents.month = month
-            dateComponents.day = day
-            return calendar.date(from: dateComponents) ?? nil
-        }
+        return date
+    
+    
 }
 
+}
 
-//References
-//
-//Email & Phone Validation in Swift
-//
-//https://stackoverflow.com/questions/27998409/email-phone-validation-in-swift
-
-
+extension Date
+{
+    public func getForamttedDate() -> String
+    {
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "EEEE, dd MMMM, yyyy"
+        let formattedDate = dateFormatterPrint.string(from: self)
+        return formattedDate
+    }
+    
+    static func from(year: Int, month: Int, day: Int) -> Date?
+    {
+        let calendar = Calendar(identifier: .gregorian)
+        var dateComponents = DateComponents()
+        dateComponents.year = year
+        dateComponents.month = month
+        dateComponents.day = day
+        return calendar.date(from: dateComponents) ?? nil
+    }
+}
