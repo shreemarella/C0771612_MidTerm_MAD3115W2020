@@ -19,6 +19,7 @@
 		2DAD4FA4241461F50076B125 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD4FA3241461F50076B125 /* Extensions.swift */; };
 		2DAD4FA8241476AC0076B125 /* DataRepoSingleton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD4FA7241476AC0076B125 /* DataRepoSingleton.swift */; };
 		2DAD4FAA241479910076B125 /* ShowBillDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DAD4FA9241479910076B125 /* ShowBillDetailsViewController.swift */; };
+		2DC36EF4241B145A00F6EFC4 /* BillDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2DC36EF3241B145A00F6EFC4 /* BillDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		2DAD4FA3241461F50076B125 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2DAD4FA7241476AC0076B125 /* DataRepoSingleton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRepoSingleton.swift; sourceTree = "<group>"; };
 		2DAD4FA9241479910076B125 /* ShowBillDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShowBillDetailsViewController.swift; sourceTree = "<group>"; };
+		2DC36EF3241B145A00F6EFC4 /* BillDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BillDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +83,7 @@
 				2DAD4FA3241461F50076B125 /* Extensions.swift */,
 				2DAD4FA7241476AC0076B125 /* DataRepoSingleton.swift */,
 				2DAD4FA9241479910076B125 /* ShowBillDetailsViewController.swift */,
+				2DC36EF3241B145A00F6EFC4 /* BillDetailViewController.swift */,
 			);
 			path = C0771612_MidTerm_MAD3115W2020;
 			sourceTree = "<group>";
@@ -162,6 +165,7 @@
 				2D1BE5C4241442F5002EED99 /* AppDelegate.swift in Sources */,
 				2DAD4FA224145D5A0076B125 /* Customer.swift in Sources */,
 				2D1BE5C6241442F5002EED99 /* SceneDelegate.swift in Sources */,
+				2DC36EF4241B145A00F6EFC4 /* BillDetailViewController.swift in Sources */,
 				2DAD4FA8241476AC0076B125 /* DataRepoSingleton.swift in Sources */,
 				2D1BE5DA2414545E002EED99 /* AddCustomerTableViewController.swift in Sources */,
 				2DAD4FA4241461F50076B125 /* Extensions.swift in Sources */,

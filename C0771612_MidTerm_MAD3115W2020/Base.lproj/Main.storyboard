@@ -242,10 +242,10 @@
             </objects>
             <point key="canvasLocation" x="3718.840579710145" y="126.5625"/>
         </scene>
-        <!--View Controller-->
+        <!--Bill Details-->
         <scene sceneID="SWC-Wm-05P">
             <objects>
-                <viewController id="H3R-D7-It4" sceneMemberID="viewController">
+                <viewController title="Bill Details" id="H3R-D7-It4" customClass="BillDetailViewController" customModule="C0771612_MidTerm_MAD3115W2020" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="OhU-Vo-WBy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -292,7 +292,7 @@
                                 </prototypes>
                             </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Bill Amount :" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3l9-Yc-wDI">
-                                <rect key="frame" x="42" y="724" width="142" height="87"/>
+                                <rect key="frame" x="20" y="724" width="374" height="87"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
