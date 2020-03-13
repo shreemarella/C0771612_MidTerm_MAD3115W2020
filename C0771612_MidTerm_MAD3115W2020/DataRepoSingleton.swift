@@ -46,5 +46,38 @@ class DataRepoSingleton
         var i2 = Internet(billID: "INT002", billDate: Date.from(year: 2018, month: 10, day: 19) ?? Date(), billType: BillType.INTERNET, providerName: "ROGER", internetGbUsed: 420)
         var i3 = Internet(billID: "INT003", billDate: Date.from(year: 2019, month: 11, day: 25) ?? Date(), billType: BillType.INTERNET, providerName: "Bell", internetGbUsed: 290)
 
+            var h1 = Hydro(billID: "HYD001", billDate: Date.from(year: 2018, month: 12, day: 30) ?? Date(), billType: BillType.HYDRO, agencyName: "Planet Energy", unitsConsumed: 50)
+            var h2 = Hydro(billID: "HYD002", billDate: Date.from(year: 2019, month: 12, day: 12) ?? Date(), billType: BillType.HYDRO, agencyName: "Planet Energy", unitsConsumed: 75)
+            
+            func loadData()
+            {
+                
+                c1.addBill(bill: m1, billID: m1.billID)
+                c1.addBill(bill: i1, billID: i1.billID)
+                c1.addBill(bill: h1, billID: h1.billID)
+                
+                c2.addBill(bill: m2, billID: m2.billID)
+                c2.addBill(bill: i2, billID: i2.billID)
+                
+                c3.addBill(bill: h1, billID: h1.billID)
+                c3.addBill(bill: h2, billID: h2.billID)
+                
+                c4.addBill(bill: i3, billID: i3.billID)
+                
+               // c5.addBill(bill: h2, billID: h2.billID)
+                
+                custList.updateValue(c1, forKey: c1.customerId)
+                custList.updateValue(c2, forKey: c2.customerId)
+                custList.updateValue(c3, forKey: c3.customerId)
+                custList.updateValue(c4, forKey: c4.customerId)
+                custList.updateValue(c5, forKey: c5.customerId)
+                
+
+            }
+
+
+            
+        }
+
     
 }
